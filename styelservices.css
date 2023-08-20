@@ -73,7 +73,7 @@ h1{
 h2{
   color: #003863;
   text-align: left;
-  font: 400 25px/32.5px "Montserrat", sans-serif;
+  font-family: 'Montserrat';font-size: 30px;
   position: relative;
   width: 518px;
 }
@@ -81,9 +81,10 @@ h2{
 p{
   color: #333333;
   text-align: left;
-  font: 400 14px/25.2px "Roboto", sans-serif;
+  font-family: 'Roboto';font-size: 17px;
   position: relative;
   width: 526px;
+  line-height: 1.7em; 
 }
 
 .box1{
@@ -136,7 +137,6 @@ button{
     text-align: center;
     margin: 20px 10px;
     border-radius: 25px;
-    font-weight: bold;
     border: 2px solid #009688;
     background: transparent;
     color: black;
@@ -192,6 +192,53 @@ button:hover{
     padding: 0;
     background: #fff;
 }
+
+.box h3{
+   color: #003863;
+   font-family: 'Montserrat';font-size: 30px;
+
+}
+
+.box p{
+    font-family: 'Roboto';font-size: 17px;
+    color: #333333;
+    padding: 20px 0 30px 0;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+    border-radius: 0px;
+    font-family: 'Montserrat';font-size: 12px;
+    border: 2px solid #f05924;
+    background: #003863;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+} 
 
 .footer {
     background-color: #24292d;

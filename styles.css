@@ -5,11 +5,11 @@
 }
 
 header{
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(sfondo.png);
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(sfondo.png);
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 0px;
+    padding: 0px 0px 200px 0;
 }
 
 .navbar{
@@ -110,23 +110,111 @@ button:hover{
     border: none;
 }
 
+.header-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box {
+    flex: 1; /* Equal flex value for both boxes */
+    padding: 0px;
+    background-color:  #fbfbfb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px; /* Add margin to create space between boxes */
+}
+
+
+.box-1 {
+    background-color: rgba(0, 0, 0, 0); /* Adjust the background color as needed */
+    padding: 20px;
+    width: 100%; /* Make sure the background color spans the entire width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h2 {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.7em; 
+}
+
+.box h3 { 
+    color: #003863;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+.box p {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 1.7em;
+    padding-bottom: 20px; /* Add space below the p */
+    text-align: center;
+}
+
+.box h4 {
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0px 30px 0px;
+}
+
+.box a{
+    padding: 0 0 30px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+}
+
 .first-middle-section .container{
         max-width: 550px;
-        margin: 20px auto;
-        padding: 20px;
+        margin: 20px 30px 20px 0;
+        padding: 20px 20px 20px 50px;
         text-align: left;
     }
 .first-middle-section h2{
     color: #003863;
+    padding: 0 0 20px 0;
+    font-family: 'Montserrat';font-size: 25px;
+}
+
+.first-middle-section p{
+    font-family: 'Roboto';font-size: 17px;
+    line-height: 1.7em; 
 }
 
 .second-middle-section{
     background-color: rgba(201, 201, 201, 0.597);
-    padding: 20px;
+    padding: 20px 20px 20px 50px;
 }
 
 .second-middle-section h2{
     color: #003863;
+    padding: 50px 50px 10px 0;
+    font-family: 'Montserrat';font-size: 25px;
+    text-align: center;
+}
+
+.second-middle-section p{
+    font-family: 'Roboto';font-size: 17px;
+    line-height: 1.7em; 
 }
 
 .second-middle-section .box-row{
@@ -137,11 +225,17 @@ button:hover{
 }
 
 .second-middle-section .box{
-    width: 347px;
-    height: 305px;
+    width: auto;
+    height: auto;
     padding: 0;
     background: #fbfbfb;
     align-items: center;
+}
+
+.second-middle-section h3{ 
+    color: #003863;
+    font-family: 'Montserrat';font-size: 25px;
+    padding: 0 0 20px 0;
 }
 
 .second-middle-section .text{
@@ -149,16 +243,22 @@ button:hover{
     padding: 95px;
 }
 
+.second-middle-section p{
+    font-family: 'Roboto';font-size: 17px;
+    line-height: 1.7em; 
+    padding: 0 0 20px 0;
+}
+
 button{
     width: 200px;
     padding: 15px 0;
     text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #009688;
-    background: transparent;
-    color: black;
+    margin: 0;
+    border-radius: 0px;
+    font-family: 'Montserrat';font-size: 12px;
+    border: 2px solid #f05924;
+    background: #003863;
+    color: white;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -184,11 +284,28 @@ button:hover{
     border: none;
 } 
 
+
 .third-middle-section .box{
     text-align: center;
     padding: 50px;
-    margin: 30px;
+    margin: 50px;
+    background: #fbfbfb;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    width: 535px;
+    height: 333px;
 }
+.third-middle-section h2{
+    color: #003863;
+    padding: 10px 50px 10px 50px;
+    font-family: 'Montserrat';font-size: 25px;
+}
+
+.third-middle-section p{
+    font-family: 'Roboto';font-size: 14px;
+    line-height: 1.7em; 
+    padding: 10px 0 20px 0;
+}
+
 .footer {
     background-color: #24292d;
     color: #fff;
