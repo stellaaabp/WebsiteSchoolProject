@@ -292,6 +292,58 @@ button:hover{
     margin-top: 10px; /* Adjust the margin as needed */
 }
 
+.footer {
+    background-color: #24292d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.search-form button{ 
+    width: 100px;
+    margin: 0;
+}
+
+.search-button {
+    padding: 3px 10px;;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 5px;
+}
+
+.social-button-container {
+    text-align: center;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
 .fa {
     padding: 20px;
     font-size: 40px;
@@ -329,3 +381,9 @@ button:hover{
     background: #bb0000;
     color: white;
   }    
+
+  .footer p{
+    color: white;
+    text-align: right;
+    font-family: 'Roboto';font-size: 17px;
+  }

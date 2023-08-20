@@ -343,3 +343,9 @@ button:hover{
     background: #bb0000;
     color: white;
   }    
+
+  .footer p{
+    color: white;
+    text-align: right;
+    font-family: 'Roboto';font-size: 17px;
+  }

@@ -63,44 +63,99 @@ h1{
     font-size: 50px;
     text-align: center;
     padding-bottom: 15px;
+    font-family: 'Montserrat';font-size: 50px;
 }
 
 .first-middle-section h2{
     color: #003863;
+    padding: 30px 30px 10px 30px;
+}
+
+.first-middle-section p{
+    padding: 10px 30px 10px 30px;
 }
 
 .first-middle-section h3{
-    color: #f05924; 
+    color: #f05924;
+    padding: 20px 30px 10px 30px; 
 }
 
+.form-group {
+    margin-bottom: 20px;
+    padding: 0px 1000px 0px 30px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+
+button[type="submit"] {
+    background-color: #003863; /* Blue color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-style: solid;
+    border-color: #f05924;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+.second-middle-section h1{
+    color: #f05924;
+    font-family: 'Roboto';font-size: 20px;
+}
 
 .second-middle-section h2{
     color: #003863;
     text-align: center;
     position: relative;
     padding: 40px;
-    font-size: 50px;
+    font-family: 'Montserrat';font-size: 50px;
   }
 
 .box-row{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+.box p{
+    font-family: "Roboto", sans-serif, 25px;
+}
 .second-middle-section .box{
-    width: 347px;
-    height: 305px;
+    width: 450px;
+    height: 600px;
+    object-fit: fill;
     padding: 0;
     background: transparent;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.second-middle-section .box img{
+.second-middle-section .box img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
+    margin-bottom: 10px; /* Add some space between text and image */
 }
+
 
 .footer {
     background-color: #24292d;
@@ -191,3 +246,9 @@ h1{
     background: #bb0000;
     color: white;
   }    
+
+  .footer p{
+    color: white;
+    text-align: right;
+    font-family: 'Roboto';font-size: 17px;
+  }
