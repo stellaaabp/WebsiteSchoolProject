@@ -99,9 +99,9 @@ button:hover{
 
 .box {
     flex: 1; /* Distribute available space equally between the boxes */
-    padding: 20px; /* Adjust the padding as needed */
+    padding: 0; /* Adjust the padding as needed */
     background-color: #fbfbfb;
-    margin: 0 10px; /* Add space between the boxes */
+    margin: 0 auto; /* Add space between the boxes */
     display: flex;
     flex-direction: column;
     align-items: center;
